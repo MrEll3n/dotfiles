@@ -1,3 +1,4 @@
+// Web_profile - Dark
 {
     "animations.Install-Method": "Apc Customize UI++",
     "update.mode": "manual",
@@ -65,5 +66,79 @@
     },
     "workbench.preferredDarkColorTheme": "Ayu Dark",
     "vim.cursorStylePerMode.visual": "block-outline",
+    
+}
+
+// Web_profile - White
+{
+    "animations.Install-Method": "Apc Customize UI++",
+    "update.mode": "manual",
+    "apc.imports": [
+        "file:///Users/vnovotny/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+    ],
+    "workbench.colorTheme": "Noctis Lux",
+    "apc.electron": {
+        "opacity": 0.95,
+        "transparent": true,
+        "backgroundColor": "#00000000",
+        "vibrancy": "ultra-dark"
+    },
+    "files.autoSave": "afterDelay",
+    "brainrot-stimulation.videoCategory": "Minecraft",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        } 
+    ],
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideLineNumbers": false,
+    "vim.smartRelativeLine": true,
+    "vim.statusBarColorControl": true,
+    "git.autofetch": true,
+    "editor.minimap.enabled": false,
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.colors": [
+        "rgba(240,240,0,0.8)",
+        "rgba(90,245,90,0.8)",
+        "rgba(255,127,255,0.8)",
+        "rgba(79,236,236,0.8)"
+    ],
+    "editor.inlayHints.enabled": "off",
+    "editor.wordWrap": "off",
+    "diffEditor.wordWrap": "off",
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": false,
+
+    "editor.fontFamily": "Cartograph CF Bold, Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "DepartureMono Nerd Font, MesloLGS NF",
+    "fontFamily": "Cartograph CF Bold, Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 12,
+
+    "editor.fontLigatures": true,
+    "editor.fontSize": 12,
+    "editor.fontVariations": true,
+    "vim.statusBarColors.normal": "#B99470",
+    "vim.statusBarColors.insert": "#f08686",
+    "vim.statusBarColors.visual": "#3b1e54",
+    "vim.statusBarColors.commandlineinprogress": "#3b1e54",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f87",
+        "statusBar.noFolderBackground": "#005f87",
+        "statusBar.debuggingBackground": "#005f87",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff",
+        "editor.lineHighlightBackground": "#fff1c7",
+        "editor.lineHighlightBiorder": "#9fced11f",
+        "editorCursor.foreground": "#daad69",
+        "editorCursor.background": "#ffffff",
+        "editorError.background": "#ff00001a"
+    },
+    "workbench.preferredDarkColorTheme": "Ayu Dark",
+    "vim.cursorStylePerMode.visual": "block-outline",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     
 }

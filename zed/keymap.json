@@ -1,0 +1,61 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+    {
+        "context": "vim_mode != insert",
+        "bindings": {
+            "ctrl-w h": "workspace::ActivatePaneLeft",
+            "ctrl-w l": "workspace::ActivatePaneRight",
+            "ctrl-w k": "workspace::ActivatePaneUp",
+            "ctrl-w j": "workspace::ActivatePaneDown",
+            // "ctrl shift .": "app_menu::OpenApplicationMenu",
+            "ctrl-n": "workspace::ToggleLeftDock",
+            "ctrl-x": "pane::CloseActiveItem",
+            // "space tab": "tab_switcher::Toggle",
+            "tab": "pane::ActivateNextItem",
+            "shift-tab": "pane::ActivatePreviousItem",
+        },
+    },
+    {
+        "context": "TabSwitcher",
+        "bindings": {
+            "space tab": "tab_switcher::Toggle",
+            "j": "panel::NextPanelTab",
+        },
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            // "ctrl-h": "project_panel::ToggleFocus",
+        },
+    },
+    {
+        "context": "ProjectPanel && !editing",
+        "bindings": {
+            // "ctrl-l": "editor::ToggleFocus",
+            "a": "project_panel::NewFile",
+            "A": "project_panel::NewDirectory",
+            "/": "project_panel::NewSearchInDirectory",
+            "y y": "project_panel::Copy",
+            "y p": "workspace::CopyPath",
+            "y ctrl-p": "workspace::CopyRelativePath",
+            "p": "project_panel::Paste",
+            "d": "project_panel::Delete",
+            "o": "project_panel::OpenPermanent",
+            "l": "project_panel::Open",
+            "r": "project_panel::Rename",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "k j": "vim::NormalBefore",
+            "ctrl-s": "workspace::Save",
+        },
+    },
+]

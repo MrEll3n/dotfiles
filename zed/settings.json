@@ -1,0 +1,103 @@
+{
+    "proxy": "",
+    "project_panel": {
+        "dock": "left",
+    },
+    "outline_panel": {
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "git_panel": {
+        "dock": "left",
+    },
+    "agent_servers": {
+        "claude-acp": {
+            "type": "registry",
+        },
+        "github-copilot-cli": {
+            "type": "registry",
+        },
+    },
+    "tabs": {
+        "file_icons": true,
+        "git_status": true,
+    },
+    "icon_theme": "Soft Charmed Icons",
+    /* Duplicated key auto-commented: "agent": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-4o"
+        },
+        "version": "2"
+    }, */
+    "edit_predictions": {
+        "provider": "copilot",
+        "mode": "subtle",
+        "disabled_globs": [
+            "**/.env*",
+            "**/*.pem",
+            "**/*.key",
+            "**/*.cert",
+            "**/*.crt",
+            "**/secrets.yml",
+            "fibonacci.py",
+        ],
+    },
+    "languages": {
+        "Python": {
+            "show_edit_predictions": false,
+        },
+    },
+    "lsp": {
+        "tailwindcss-language-server": {
+            "settings": {
+                "includeLanguages": {
+                    "vue": "html",
+                },
+                "experimental": {
+                    "classRegex": [
+                        "class=\"([^\"]*)\"",
+                        "class='([^']*)'",
+                        ":class=\"([^\"]*)\"",
+                        ":class='([^']*)'",
+                    ],
+                },
+            },
+        },
+    },
+    "auto_update": true,
+    "tab_size": 4,
+    "theme": "Zedokai Darker",
+    "vim_mode": true,
+    "ui_font_size": 16,
+    "buffer_font_size": 14,
+    "buffer_font_family": "JetBrainsMono Nerd Font", // Zed Plex Mono
+    "buffer_font_fallbacks": ["JetBrainsMono Nerd Font"], // This fixes terminal font
+
+    "terminal": {
+        "font_family": "JetBrainsMono Nerd Font",
+        "font_size": 14,
+    },
+
+    "indent_guides": {
+        "enabled": true,
+        "line_width": 1,
+        "active_line_width": 3,
+        "coloring": "indent_aware",
+        "background_coloring": "disabled",
+    },
+    "show_completions_on_input": true,
+    "relative_line_numbers": "enabled",
+    // Use Copilot Chat AI as default
+    "agent": {
+        "dock": "right",
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-5",
+        },
+        "default_profile": "write",
+        "model_parameters": [],
+    },
+}
